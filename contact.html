@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="keywords" content="">
+          <meta name="author" content="Kyle Mann">
+      <title>The Reputation Lab | Hospitality Marketing Agency</title>
+          <!-- Reset Sheet, Google Fonts, CSS Document -->
+        <link rel="shortcut icon" href="http://sibsforsibs.com/favicon.ico" />
+    <link rel="stylesheet"        href="css/normalize.css">
+    <link rel="stylesheet" href="css/form.css">
+          <!-- Smooth Page scroll -->
+              <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.js"></script>
+              <script type="text/javascript">
+                $(window).load(function(){
+                $('a').click(function(){
+                    $('html, body').animate({
+                        scrollTop: $( $(this).attr('href') ).offset().top
+                    }, 500);
+                    return false;
+                });
+                });
+            </script>
+</head>
+
+<body>
+    
+    <section class="body">
+    
+	    <form action="form.php" method="post" enctype="multipart/form-data">
+	        
+	        <h1 class="title">Contact</h1>
+	        
+		    <label></label>
+		    <input name="name" required="required" placeholder="Your Name">
+		    
+		            
+		    <label></label>
+		    <input name="email" type="email" required="required" placeholder="Your Email">
+            
+             <label></label>
+		    <input name="phone" type="phone" required="required" placeholder="Your Phone Number">
+		            
+               <label></label>
+		    <input name="company"  required="required" placeholder="Your Company">
+		    
+		    <label></label>
+		    <textarea name="message" cols="20" rows="5" required="required" placeholder="Message"></textarea>
+		    
+		    		    
+		    <input id="cancel" name="cancel" value="Cancel" />
+		            
+		    <input id="submit" name="submit" type="submit" value="Submit">
+	        
+	    </form>
+
+    </section>
+
+</body>
+</html>
