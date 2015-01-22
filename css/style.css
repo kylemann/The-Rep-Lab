@@ -1,39 +1,87 @@
 * {
     box-sizing: border-box;
-    /*
+    
+/*
      border-style: solid;
     border-width: 5px;
-    border-color: red;
-*/
+    border-color: green;
  
-}
-html {
-    max-width: 100%;
-    
-    
+*/
 }
 
 body {
-font-size: 1.4em; 
-    line-height: 1.5em;
-  font-family: 'PT Sans', sans-serif;
+font-size: 1.1em; 
+    line-height: 1.3em;
+font-family: 'Droid Serif', serif;
 box-sizing: border-box;
+     padding-right: 25px;
+    padding-left: 25px;
+}
+
+body p
+{
+ font-size: .9em; 
+    line-height: 1.1em;
+    
 }
 
 div#replablogo {
-background-image: url(../images/replablogoipad.jpg);  
+background-image: url(../images/replablogomobile.jpg);  
     background-repeat: no-repeat;
- height: 90px;
-        width: 300px;
     margin: 0 auto;
     text-indent: none;
 }
 
+.logobox {
+ height: 76px;
+    width: 250px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#headerimg {
+background: url(../images/headerimg.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#img1 {
+background: url(../images/img1.jpg)no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#img2 {
+background: url(../images/img2.jpg)no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#img3 {
+background: url(../images/img3.jpg)no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#img4 {
+background: url(../images/img4.jpg)no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .sectionimage {
-      height: 250px;
-        width: 300px;
+      height: 225px;
+        width: 275px;
         margin: 0 auto;
-   border:2px solid #44678D;
+   border: none;
     
 }
 
@@ -46,14 +94,55 @@ nav ul {
 }
 
 nav ul li {
-    padding: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
    font-weight: normal;
-    font-size: 1.4rem;
+    font-size: .9em;
+    border-color: red;
+    border-width: 1px;
+    border-style: solid;
+    
+}
+li:last-child {
+ visibility: hidden;
+    margin-top: -60px;
+}
+
+.freetrial {
+   border-bottom: 3px solid tomato;
+    background-color: red;    
+color: white;
+  text-align: center;
+    margin: 0 auto;
+    display: block;
+font-size: .8em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+h1, h3 {
+ margin: 0 auto;
+    text-align: center;
     
 }
 
+h1 {
+ font-size: 1.1em;   
+    line-height: 1.3em;
+}
 
+h2 {
+ font-size: 1em;
+    line-height: 1.2em
+}
 
+.comic {
+ font-size: .8em;
+    line-height: 1em;
+font-family: 'Permanent Marker', cursive;
+    text-align: center;
+}
     
 
 
