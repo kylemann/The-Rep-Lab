@@ -1,24 +1,148 @@
 
+#main-wrapper {
+font-size: 1.25em; 
+    line-height: 1.33em;
+font-family: 'Droid Serif', serif;
+box-sizing: border-box;
+     padding-right: 25px;
+    padding-left: 25px;
+    max-width: 520px;
+    margin: 0 auto;
+}
 
-@import url(http://fonts.googleapis.com/css?family=Oswald);
-@import url(http://fonts.googleapis.com/css?family=Muli:300);
-
-h1
+#main-wrapper p
 {
-font-family: 'Oswald', sans-serif;
-font-size: 30px;
-text-transform: uppercase;
-color: #216182;
+ font-size: .8em; 
+    line-height: .1.1em;
+    display: block;
+-webkit-margin-before: 1.75em;
+-webkit-margin-after: 1.75em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+
+#main-wrapper .comic {
+ font-size: 1em;
+    line-height: 1.2em;
+font-family: 'Permanent Marker', cursive;
+    text-align: center;
 }
 
 
-/* Centres the page (this could be container)*/
+div#replablogo {
+background: url(../images/replablogomobile.jpg);  
+    background-repeat: no-repeat;
+      background-size: cover;
+    margin: 0 auto;
+    text-indent: none;
+}
+
+img {
+ max-width: 100%;
+
+}
+
+iframe {
+ max-width: 100%;
+    margin: 0 auto;
+    
+}
+
+#contact {
+ text-align: center;
+    color: white;
+}
+
+.icon1 {
+       width: 90px;
+    height: 90px;
+  margin: 0 auto;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li a {
+ background-color: red;
+    color: white;
+ border-bottom: 5px solid tomato;
+      border-style: solid;
+   border-top-color: #C2BBB7;
+    border-right-color: #5C5653;
+    border-left-color: #C2BBB7;
+    border-width: 3px;
+    font-size: 1.1em;
+    padding: 12px;
+margin-bottom: 50px;
+    margin-top: 20px;
+    width: 275px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color .7s ease;
+    border-radius: 5%;
+}
+
+#main-wrapper .comic {
+ font-size: 1em;
+    line-height: 1.2em;
+font-family: 'Permanent Marker', cursive;
+    text-align: center;
+}
+
+h1 {
+ margin: 0 auto;
+    text-align: left;
+  font-size: 1.4em;  
+    line-height: 1.2em;
+}
+
+
+
+a {
+ display: block;
+    text-decoration: none;
+}
+
+li a:hover {
+  background-color: tomato;    
+}
+li a:hover, .hover {
+  background-color: tomato; 
+    	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+svg:hover .hover
+
+{
+    fill: tomato; }
+
+.main-footer {
+    text-align: center;
+    font-size: .7rem;
+    box-shadow: 0px 0px 5px red; 
+    -webkit-box-shadow: 0px 0px 5px red; 
+    -moz-box-shadow: 0px 0px 5px red;
+    padding: 6px;
+
+}
+
+
+
+/* FORM STYLING*/
 .body {
     display:block;
     margin:0 auto;
-    width:275px;
+    width: 275px;
     font-family: 'Muli', sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     color: #999;
 }
 
@@ -35,12 +159,12 @@ label
 form 
 {
     margin:0 auto;
-    width:275px;
+    width: 99%;
 }
 
 /* Styles the text boxes */
 input, textarea, file {
-	width:275px;
+	width:99%;
 	height:27px;
 	background-color:#efefef;
 	border-radius:5px;
@@ -53,8 +177,10 @@ input, textarea, file {
 	color:#3a3a3a;
 }
 
-	input:focus, textarea:focus {
-		border:1px solid #97d6eb;
+input:focus, textarea:focus {
+		border:1px solid;
+   background-color: #FFA97E;
+    opacity: .9;
 	}
 
 /* Styles the text area boxes (message field) */	
@@ -68,37 +194,153 @@ textarea
 /* Styles the submit button */
 #submit {
 	/* background:url(images/submit.png); */
-	width:127px;
+	width: 100%;
 	height:48px;
 	text-align: center;
-	/* text-indent:-9999px; */
+/*	 text-indent:-9999px; */
 	border:none;
-	margin-top:20px;
+	margin:20px auto;
 	cursor:pointer;
+    align-content: center;
+    background-color: red;
+    border-bottom: 5px solid tomato;
+      border-style: solid;
+   border-top-color: #C2BBB7;
+    border-right-color: #5C5653;
+    border-left-color: #C2BBB7;
+    border-width: 3px;
+    color: white;
+    font-size: 1.2em;
 }
 
 /* Styles the submit hover */	
 #submit:hover {
 	color:#fff;
-	background-color: #216182;
+	background-color: tomato;
 }
 
-/* Styles the cancel button*/	
-#cancel {
-	/* background:url(images/cancel.png); */
-	width:127px;
-	height:28px;
-	text-align: center;
-	/* text-indent:-9999px; */
-	border:none;
-	margin-top:20px;
-	cursor:pointer;
+
+@media only screen and (min-width: 520px) {
+ 
+#main-wrapper {
+     max-width: 590px;   
+    }
+    
+    .body {
+    width: 420px;
+
+}
 }
 
-/* Styles the cancel hover */
-#cancel:hover {
-	color:#fff;
-	background-color: #000;
-	opacity:0.9;
+@media only screen and (min-width: 600px) {
+    
+#main-wrapper {
+     max-width: 700px;   
+    } 
+    
+    #icon1container {
+     display: -webkit-flex;
+  display: flex;
+    width: 100%;
+    }
+    
+    .iconcolumn {
+ width: 33.3333333%;
+    margin-top: 50px;
+    
+}
+    
+    #mapcontainer {
+     margin: 20px auto; 
+    
+    max-width: 600px;
+    }
+    
+        .body {
+    width: 550px;
+
+}
+    
+}
+
+@media only screen and (min-width: 782px)  {
+    
+    #main-wrapper {
+     max-width: 720px;
+    margin-top: 152px;
+    }
+    
+nav {
+   width: 100%;
+   position: fixed;
+   height: 100px;
+   background-color: white;
+    -webkit-transition: all 2s ease;
+    transition: all 2s ease;
+    z-index: 200;
+    margin-top: -175px;
+    align-items: center;
+  }
+    
+nav ul {
+display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+    flex-direction: row;
+}
+    
+nav li, nav a {
+ display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+    text-align: center;   
+}
+
+    nav ul li a {
+    display: block;
+    }
+    
+#flex1 {
+ margin-right: auto;
+    margin-left: 15px;
+}
+
+#flex2 {
+margin-right: 15px;        
+    }
+    
+    nav ul li a {
+        margin-top: 25px;
+        margin-bottom: 30px
+}
+
+nav.sticky {    
+    box-shadow: 0px 0px 5px tomato; 
+    -webkit-box-shadow: 0px 0px 5px tomato; 
+    -moz-box-shadow: 0px 0px 5px tomato;
+}
+    
+nav.sticky ul li a {
+    padding: 10px;
+}
+    
+    #main-wrapper .comic {
+ font-size: 1.4em;
+    line-height: 1.3em;
+        text-align: center;
+    }
+    
+    h1 {
+ font-size: 1.8em; 
+    line-height: 1.4em;
+        text-align: center;
+}
+    
+      .icon1 {
+       width: 120px;
+    height: 120px;
+    }
 }
 
