@@ -11,6 +11,7 @@
         <link rel="shortcut icon" href="http://sibsforsibs.com/favicon.ico" />
 <link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Droid+Serif:400,700,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
+    
           <!-- Smooth Page scroll -->
               <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.js"></script>
               <script type="text/javascript">
@@ -23,22 +24,45 @@
                 });
                 });
             </script>
+    
+<!-- Shrinking Nav On Scroll -->
+   <script>
+            $(window).scroll(function() {
+            if ($(this).scrollTop() > 1){  
+                $('nav').addClass("sticky");
+                $("img[src='images/replablogoipad.jpg']").attr("src","images/replablogomobile.jpg");
+            }
+            else{
+                $('nav').removeClass("sticky");
+                $("img[src='images/replablogomobile.jpg']").attr("src","images/replablogoipad.jpg");
+            }
+
+        });
+        </script>
+    
 </head>
    
-  <nav id="home">
+  <nav>
     
     <ul>
-        <a href="#home"><li><div id="replablogo" class="logobox"></div></li></a>
+      <div id="flex1">  <a href="#home"><li>
+<!--          <div id="replablogo" class="logobox"></div>-->
+          <img src="images/replablogoipad.jpg">
+          </li></a></div>
+        <div id="flex2">
         <li><a href="#contact">Contact Us</a></li>
+        </div>
       </ul>
     </nav>
-    <body><div id="main-wrapper">
+    <body>
+        <div id="main-wrapper">
     <header>
-    <div id="headerimg" class="sectionimage"></div>
+<!--    <div id="headerimg" class="sectionimage"></div>-->
+    <img id="home" src="images/headerimg.jpg">
         <br>
     <h1> We’re a team of dedicated marketers passionate about enhancing your online reputation.
 </h1>
-        <a><button class="freetrial">Trial Offer: Free Case Study</button></a>
+        <a href="contact.html"><button class="freetrial">Trial Offer: Free Case Study</button></a>
     </header>
     <section>
     <h2>The solution to your Reputation Management needs </h2>
@@ -100,7 +124,10 @@
         <br>
            <p class="comic">How do you manage this??</p>
         <br>
-    <div class="sectionimage" id="img1"></div><!-- img1 container --><br>
+<!--    <div class="sectionimage" id="img1"></div>-->
+        <!-- img1 container -->
+        <img src="images/img1.jpg">
+        <br>
    <p class="comic">Well, we have just the solution..</p>
     </article>
     <section>
@@ -120,7 +147,10 @@
     </section>
     <article>
         <br>
-    <div class="sectionimage" id="img2"></div><!-- img2 container --><br>
+<!--    <div class="sectionimage" id="img2"></div>-->
+        <!-- img2 container -->
+        <img src="images/img2.jpg">
+        <br>
         <p class="comic">With the Rep Lab, your team will have time to focus on their role and new ways of satisfying guests</p>
     
         <a><button class="freetrial">Trial Offer: Free Case Study</button></a>
@@ -132,7 +162,10 @@
     </section>
     <article>
         <br>
-    <div class="sectionimage" id="img3"></div><!-- img2 container --><br>
+<!--    <div class="sectionimage" id="img3"></div>-->
+        <!-- img2 container -->
+        <img src="images/img3.jpg">
+        <br>
         <p class="comic">We are that missing link to take your business to the next level</p>
     </article>
     <section>
@@ -153,8 +186,8 @@
     </section>
     <article>
         <p class="comic">Your reputation is about to get better - Give us a try!</p>
+        <img src="images/img4.jpg">
         <br>
-    <div class="sectionimage" id="img4"></div><!-- img3 container --><br>
         <a><button class="freetrial">Trial Offer: Free Case Study</button></a>
     </article>
      <section>

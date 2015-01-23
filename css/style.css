@@ -46,51 +46,12 @@ background: url(../images/replablogomobile.jpg);
     margin: 0 auto;
 }
 
-#headerimg {
-background: url(../images/headerimg.jpg) no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#img1 {
-background: url(../images/img1.jpg)no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#img2 {
-background: url(../images/img2.jpg)no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
+img {
+ max-width: 100%;
+
 }
 
-#img3 {
-background: url(../images/img3.jpg)no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-#img4 {
-background: url(../images/img4.jpg)no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.sectionimage {
-      height: 225px;
-        width: 275px;
-        margin: 0 auto;
-   border: none;
-    
-}
 
 nav ul {
     padding: 0;
@@ -103,12 +64,12 @@ nav ul {
 nav ul li a {
  background-color: red;
     color: white;
- border-bottom: 30px tomato;
+ border-bottom: 5px solid tomato;
       border-style: solid;
    border-top-color: #C2BBB7;
     border-right-color: #5C5653;
     border-left-color: #C2BBB7;
-    border-width: 2px;
+    border-width: 3px;
     font-size: 1.1em;
     padding: 12px;
 margin-bottom: 50px;
@@ -116,6 +77,7 @@ margin-bottom: 50px;
     width: 275px;
     margin-left: auto;
     margin-right: auto;
+    transition: background-color .7s ease;
 }
 
 .freetrial {
@@ -129,6 +91,7 @@ font-size: .8em;
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 20px;
+    transition: background-color .7s ease;
 }
 
 h1, h3 {
@@ -151,9 +114,9 @@ h2 {
 -webkit-margin-end: 0px;
 }
 
-.comic {
- font-size: .8em;
-    line-height: 1em;
+#main-wrapper .comic {
+ font-size: 1em;
+    line-height: 1.2em;
 font-family: 'Permanent Marker', cursive;
     text-align: center;
 }
@@ -165,6 +128,13 @@ a {
 
 li a:hover {
   background-color: tomato;    
+}
+li a:hover {
+  background-color: tomato;    
+}
+
+button:hover {
+ background-color: tomato;   
 }
 
 .icon {
@@ -214,13 +184,6 @@ background: url(../images/replablogoipad.jpg);
  height: 106px;
     width: 375px;   
 }
-    
-   .sectionimage {
-      height: 300px;
-        width: 350px;
-        margin: 0 auto;
-   border: none;
-   }
 
 }
 
@@ -240,24 +203,87 @@ background: url(../images/replablogoipad.jpg);
 @media only screen and (min-width: 782px)  {
     
 #main-wrapper {
-     max-width: 820px;   
+     max-width: 820px;
+    margin-top: 200px;
     }
-    
     
 nav {
-    width: 100%;
-    background-color: black;
-
- }
-
-nav li {
-
-    }
+   width: 100%;
+   position: fixed;
+   height: 100px;
+   background-color: white;
+    -webkit-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+    z-index: 200;
+    margin-top: -215px;
+    align-items: center;
+  }
     
-nav li:first-child {
-    margin-right: auto;
-     
+nav ul {
+display: flex;
+    flex-direction: row;
+}
+    
+nav li, nav a {
+ display: flex;
+    text-align: center;   
 }
 
+    nav ul li a {
+    display: block;
+    }
+    
+#flex1 {
+ margin-right: auto;
+    margin-left: 15px;
+      -webkit-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+}
+
+#flex2 {
+margin-right: 15px;        
+    }
+    
+    nav ul li a {
+        margin-top: 20px;
+        margin-bottom: 30px;
+/*
+       background-color: #C2BBB7; 
+        border-bottom-color: red;
+         border-top-color: red;
+    border-right-color: red;
+    border-left-color: red;
+*/
+    }
+    
+h1 {
+ font-size: 1.8em; 
+    line-height: 1.4em;
+}
+    h2 {
+        font-size: 1.4em; 
+    line-height: 1.4em; 
+        
+    }
+    
+    .icon {
+       width: 120px;
+    height: 120px;
+    }
+    #main-wrapper .comic {
+ font-size: 1.4em;
+    line-height: 1.3em;
+    }
+    #main-wrapper p {
+     font-size: 1.1em; 
+        line-height: 1.4em;
+    }
+    
+    
+nav.sticky {    
+    box-shadow: 0px 0px 5px #333333; 
+    -webkit-box-shadow: 0px 0px 5px #333333; 
+    -moz-box-shadow: 0px 0px 5px #333333;
+}
 
 }
