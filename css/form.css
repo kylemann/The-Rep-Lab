@@ -29,14 +29,6 @@ font-family: 'Permanent Marker', cursive;
 }
 
 
-div#replablogo {
-background: url(../images/replablogomobile.jpg);  
-    background-repeat: no-repeat;
-      background-size: cover;
-    margin: 0 auto;
-    text-indent: none;
-}
-
 img {
  max-width: 100%;
 
@@ -80,11 +72,15 @@ nav ul li a {
     padding: 12px;
 margin-bottom: 50px;
     margin-top: 20px;
-    width: 275px;
+    width: 200px;
     margin-left: auto;
     margin-right: auto;
     transition: background-color .7s ease;
     border-radius: 5%;
+        -webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
 }
 
 #main-wrapper .comic {
@@ -308,12 +304,13 @@ nav li, nav a {
 }
 
 #flex2 {
-margin-right: 15px;        
+margin-right: 20px;        
     }
     
     nav ul li a {
         margin-top: 25px;
-        margin-bottom: 30px
+        margin-bottom: 30px;
+        font-size: 1.3em;
 }
 
 nav.sticky {    
@@ -324,6 +321,7 @@ nav.sticky {
     
 nav.sticky ul li a {
     padding: 10px;
+    width: 140px;
 }
     
     #main-wrapper .comic {
