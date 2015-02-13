@@ -5,7 +5,7 @@
     $company = $_POST['company'];
     $message = $_POST['message'];
     $from = 'From: thereputationlab.com'; 
-    $to = 'briansprice72@gmail.com'; 
+    $to = 'mannkyleca@gmail.com'; 
     $subject = 'Email Inquiry';
 
     $body = "From: $name\n E-Mail: $email\n Message:\n $message";
