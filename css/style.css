@@ -50,32 +50,28 @@ nav ul {
     text-align: center;
 }
 
+
+
 nav ul li a {
  background-color: red;
     color: white;
- border-bottom: 5px solid tomato;
-      border-style: solid;
-   border-top-color: #C2BBB7;
-    border-right-color: #5C5653;
-    border-left-color: #C2BBB7;
-    border-width: 3px;
-    font-size: 1.1em;
-    padding: 12px;
+    font-size: 1em;
+    padding: 12px 10px;
 margin-bottom: 50px;
     margin-top: 20px;
-    width: 200px;
+    width: 150px;
     margin-left: auto;
     margin-right: auto;
     transition: background-color .7s ease;
-    border-radius: 5%;
-    -webkit-transition: all 1s ease-in-out;
-	-moz-transition: all 1s ease-in-out;
-	-o-transition: all 1s ease-in-out;
-	transition: all 1s ease-in-out;
+    border-radius: 1px;
+        -webkit-transition: all .5s ease-in-out;
+	-moz-transition: all 1.5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
 }
 
 .freetrial {
-   border-bottom: 3px solid tomato;
+    border: none;
     background-color: red;    
 color: white;
   text-align: center;
@@ -86,7 +82,7 @@ font-size: .8em;
     margin-bottom: 50px;
     padding: 15px;
     transition: background-color .7s ease;
-      border-radius: 5%;
+      border-radius: 1px;
     width: 100%;
 }
 
@@ -180,13 +176,18 @@ ul.list {
     margin: 0 auto;
 }
 
+ul.list li {
+ padding-bottom: 15px;   
+    
+}
+
 .main-footer {
     text-align: center;
     font-size: .7rem;
-    box-shadow: 0px 0px 5px red; 
-    -webkit-box-shadow: 0px 0px 5px red; 
-    -moz-box-shadow: 0px 0px 5px red;
-    padding: 6px;
+    box-shadow: 0px 0px 5px grey; 
+    -webkit-box-shadow: 0px 0px 5px grey; 
+    -moz-box-shadow: 0px 0px 5px grey;
+    padding: 3px;
 
 }
 
@@ -250,7 +251,9 @@ display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+    display: -webkit-flex;
     flex-direction: row;
+    -webkit-flex-direction: row;
 }
     
 nav li, nav a {
@@ -314,9 +317,9 @@ h2 {
     
     
 nav.sticky {    
-    box-shadow: 0px 0px 5px tomato; 
-    -webkit-box-shadow: 0px 0px 5px tomato; 
-    -moz-box-shadow: 0px 0px 5px tomato;
+    box-shadow: 0px 0px 5px grey; 
+    -webkit-box-shadow: 0px 0px 5px grey; 
+    -moz-box-shadow: 0px 0px 5px grey;
 }
     
 nav.sticky ul li a {
